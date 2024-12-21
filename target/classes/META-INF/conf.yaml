@@ -1,0 +1,20 @@
+persistence: "POSTGRESQLDETTES"
+
+repo: "RepositoryList"
+repositories:
+  RepositoryJPA: "dette.boutique.core.Factory.FactoryRepositoryJPA"
+  RepositoryBD: "dette.boutique.core.Factory.FactoryRepositoryBD"
+  RepositoryList: "dette.boutique.core.Factory.FactoryRepositoryList"
+
+connection:
+  type: "postgres" 
+  mysql:
+    url: "jdbc:mysql://localhost:3306/gestion_dettes"
+    user : "root"
+    password: ""
+    driver: "com.mysql.cj.jdbc.Driver"
+  postgres:
+    url: "jdbc:postgresql://localhost:5432/gestion_dettes"
+    user: "postgres"
+    password: "1012"
+    driver: "org.postgresql.Driver"
